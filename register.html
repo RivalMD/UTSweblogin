@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f9ff; /* Latar belakang biru muda */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #007bff; /* Warna biru navbar */
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f4f9ff;
+        }
+
+        .container {
+            max-width: 500px;
+            background-color: white;
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007bff; /* Warna biru untuk heading */
+            font-weight: bold;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            box-shadow: none;
+            border: 1px solid #ddd;
+        }
+
+        .form-control:focus {
+            border-color: #007bff; /* Fokus border warna biru */
+            box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.5); /* Efek saat fokus */
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border: none;
+            border-radius: 25px;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+
+        .text-center a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .text-center a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Beranda</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="detail.html">Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Daftar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="login.html">Masuk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Form -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Daftar</h2>
+        <form>
+            <div class="mb-3">
+                <label for="username" class="form-label">Nama Pengguna</label>
+                <input type="text" class="form-control" id="username" placeholder="Masukkan nama pengguna Anda" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Kata Sandi</label>
+                <input type="password" class="form-control" id="password" placeholder="Masukkan kata sandi Anda" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Daftar</button>
+        </form>
+        <p class="text-center mt-3">
+            Sudah punya akun? <a href="login.html">Masuk di sini</a>.
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
